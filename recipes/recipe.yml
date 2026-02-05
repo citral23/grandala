@@ -34,6 +34,9 @@ modules:
       packages:
         - firefox
         - firefox-langpacks
+        - htop
+        - gnome-software
+        - gnome-system-monitor
 
   - type: default-flatpaks
     configurations:
