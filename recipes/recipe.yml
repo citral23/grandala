@@ -60,3 +60,10 @@ modules:
           - page.tesk.Refine
 
   - type: signing
+
+  - type: systemd
+    system:
+      enabled:
+        - tailscaled
+        - libvirtd
+        - sshd
