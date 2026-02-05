@@ -67,3 +67,23 @@ modules:
         - tailscaled
         - libvirtd
         - sshd
+
+  - type: soar
+    additional-repos: true
+    auto-upgrade: true
+    upgrade-interval: '3d'
+
+  - type: gnome-extensions
+    install:
+      - 6670 #Bluetooth Battery Meter
+      - 3193 #Blur my Shell
+      - 615  #AppIndicator and KStatusNotifierItem Support
+      - 517  #Caffeine
+      - 744  #Hide Activities Button
+      - 4099 #No overview at start-up
+      - 5964 #Quick Settings Audio Devices Hider
+      - 19   #User Themes
+
+  - type: kargs
+    kargs:
+      - split_lock_detect=off
